@@ -3,6 +3,14 @@
   chippertechnology.com
 */
 
+function scrollToElement(elementId) {
+  const element = document.getElementById(elementId);
+
+  if (element) {
+    element.scrollIntoView({ behavior: "smooth" });
+  }
+}
+
 (function ($) {
   var $window = $(window),
     $body = $("body");
@@ -35,8 +43,10 @@
   // Off-Canvas Navigation.
 
   // Title Bar.
+
   $(
     '<div id="titleBar">' +
+      '<a href="#navPanel" class="toggle"></a>' +
       '<span class="title">' +
       $("#logo").html() +
       "</span>" +

@@ -32,6 +32,14 @@ body {
 	line-height: 1;
 }
 
+.guarantee-end {
+	text-align: center;
+	margin-top: 60px;
+	font-size: 20px;
+	letter-spacing: 0.05em;
+	color: #483d3d;
+}
+
 ol, ul {
 	list-style: none;
 }
